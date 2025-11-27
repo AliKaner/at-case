@@ -1,0 +1,27 @@
+@use "@/styles/typography.scss" as types;
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+
+  .title {
+    @include types.font-30-bold;
+    margin-bottom: 1rem;
+    color: var(--text-100);
+  }
+
+  .message {
+    @include types.font-24-regular;
+    color: var(--text-200);
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    width: 12rem;
+    margin-top: 1rem;
+  }
+}

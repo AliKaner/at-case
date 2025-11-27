@@ -1,0 +1,13 @@
+query GetProductImages($productId: Int!) {
+  productsByFilter(filter: { pageNumber: 1, pageSize: 1, productId: $productId }) {
+    products {
+      id
+      productImages {
+        relatedBarcodes
+        relatedBarcodesRaw
+        imagePath
+      }
+    }
+  }
+}
+

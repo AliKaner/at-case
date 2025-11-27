@@ -1,0 +1,54 @@
+query GetProductDetails($productId: Int!) {
+  productDetails(productId: $productId) {
+    id
+    stockCode
+    stock
+    gtin
+    manufacturerPartNumber
+    discountRate
+    incrementRange
+    isInFavorite
+    name
+    totalRecord
+    url
+    vat
+    productProperties {
+      id
+      barcode
+      price
+      stock
+      variantValues {
+        key
+        value
+      }
+      variantSubValues {
+        id
+        key
+        value
+      }
+    }
+    brand {
+      mname
+      picture
+      id
+    }
+    category {
+      url
+      id
+      categoryName
+    }
+    productImages {
+      relatedBarcodes
+      relatedBarcodesRaw
+      imagePath
+    }
+    salePrice
+    salePriceWithTax
+    oldPrice
+    oldPriceWithTax
+    price
+    priceWithTax
+    currency
+  }
+}
+

@@ -1,0 +1,109 @@
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--pure-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--gray-100);
+  overflow: hidden;
+}
+
+.imagePlaceholder {
+  @extend .skeleton;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.dropdownButton {
+  @extend .skeleton;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.brand {
+  @extend .skeleton;
+  width: 80px;
+  height: 12px;
+}
+
+.title {
+  @extend .skeleton;
+  width: 100%;
+  height: 16px;
+  margin-top: 4px;
+}
+
+.titleSecond {
+  @extend .skeleton;
+  width: 75%;
+  height: 16px;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.price {
+  @extend .skeleton;
+  width: 100px;
+  height: 22px;
+}
+
+.oldPrice {
+  @extend .skeleton;
+  width: 60px;
+  height: 14px;
+}
+
+.stock {
+  @extend .skeleton;
+  width: 70px;
+  height: 12px;
+  margin-top: 4px;
+}
+

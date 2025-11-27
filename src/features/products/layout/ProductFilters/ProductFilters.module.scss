@@ -1,0 +1,81 @@
+.filtersCard {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shareRow {
+  display: flex;
+  justify-content: stretch;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-100);
+  margin-bottom: 4px;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRow:has(.input:nth-of-type(2)) {
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.input,
+.select {
+  width: 100%;
+}
+
+.stockFilterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-100);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 1024px) {
+  .filtersCard {
+    margin-bottom: 0;
+  }
+
+  .formRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .actions {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

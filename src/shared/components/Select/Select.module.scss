@@ -1,0 +1,115 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-150);
+  letter-spacing: 0.01em;
+}
+
+.selectContainer {
+  position: relative;
+  width: 100%;
+}
+
+.select {
+  width: 100%;
+  padding: 10px 40px 10px 14px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--border-radius-lg);
+  background: var(--pure-white);
+  color: var(--text-100);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  &:hover:not(:disabled) {
+    border-color: var(--gray-300);
+    background: var(--gray-50);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: var(--gray-100);
+  }
+
+  &.hasError {
+    border-color: var(--danger);
+    
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+    }
+  }
+
+  option {
+    padding: 10px 14px;
+    background: var(--pure-white);
+    color: var(--text-100);
+    font-size: 14px;
+    
+    &:disabled {
+      color: var(--text-400);
+    }
+    
+    &:checked {
+      background: var(--primary-light);
+      color: var(--pure-white);
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-200);
+  transition: transform 0.2s ease, color 0.2s ease;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.selectContainer:hover .arrow {
+  color: var(--text-150);
+}
+
+.selectContainer:focus-within .arrow {
+  color: var(--primary);
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: var(--danger);
+  font-weight: 400;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

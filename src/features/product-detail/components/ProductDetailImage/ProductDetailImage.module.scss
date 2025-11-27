@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--pure-white);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.image {
+  object-fit: contain;
+  padding: 20px;
+}
+
+@media (min-width: 1024px) {
+  .imageWrapper {
+    max-width: 100%;
+  }
+}
+

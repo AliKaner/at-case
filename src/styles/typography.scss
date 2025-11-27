@@ -1,0 +1,252 @@
+@mixin font-10-regular {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+@mixin font-10-medium {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+@mixin font-10-semibold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+@mixin font-10-bold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin font-12-regular {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.9375rem;
+}
+
+@mixin font-12-medium {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.9375rem;
+}
+
+@mixin font-12-semibold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 0.9375rem;
+}
+
+@mixin font-12-bold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.9375rem;
+}
+
+@mixin font-14-regular {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0625rem;
+}
+
+@mixin font-14-medium {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.0625rem;
+}
+
+@mixin font-14-semibold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.0625rem;
+}
+
+@mixin font-14-bold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.0625rem;
+}
+
+@mixin font-16-regular {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+@mixin font-16-medium {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+@mixin font-16-semibold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+@mixin font-16-bold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin font-18-regular {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+@mixin font-18-medium {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+@mixin font-18-semibold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+@mixin font-18-bold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin font-24-regular {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+@mixin font-24-medium {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
+@mixin font-24-semibold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+}
+
+@mixin font-24-bold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+@mixin font-25-regular {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.5625rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+@mixin font-25-medium {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.5625rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+@mixin font-25-semibold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+@mixin font-25-bold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin font-30-regular {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+@mixin font-30-medium {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+@mixin font-30-semibold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+@mixin font-30-bold {
+  font-family: var(--font-kumbh-sans);
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@mixin cc-font-12-medium {
+  font-family: var(--font-gordita);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.0625rem;
+}
+
+@mixin cc-font-14-medium {
+  font-family: var(--font-gordita);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 2%;
+}
+
+@mixin cc-font-16-bold {
+  font-family: var(--font-gordita);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+@mixin cc-font-17-bold {
+  font-family: var(--font-gordita);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 10%;
+}

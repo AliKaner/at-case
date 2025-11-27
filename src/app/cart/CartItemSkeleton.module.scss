@@ -1,0 +1,142 @@
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+.cartItem {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: var(--pure-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.itemImage {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.imagePlaceholder {
+  @extend .skeleton;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.itemDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.itemName {
+  @extend .skeleton;
+  width: 200px;
+  height: 20px;
+}
+
+.itemBrand {
+  @extend .skeleton;
+  width: 100px;
+  height: 13px;
+}
+
+.stockInfo {
+  @extend .skeleton;
+  width: 80px;
+  height: 12px;
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.quantityControl {
+  @extend .skeleton;
+  width: 112px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.removeButton {
+  @extend .skeleton;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.itemPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.unitPrice {
+  @extend .skeleton;
+  width: 80px;
+  height: 13px;
+}
+
+.totalItemPrice {
+  @extend .skeleton;
+  width: 100px;
+  height: 22px;
+}
+
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .itemImage {
+    width: 100%;
+    height: 200px;
+  }
+
+  .itemName {
+    width: 100%;
+  }
+
+  .itemPrice {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 12px;
+    border-top: 1px solid var(--gray-200);
+  }
+}

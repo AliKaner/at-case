@@ -1,0 +1,97 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.backButton {
+  margin-bottom: 24px;
+  border: none !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  background: transparent !important;
+  padding-left: 0 !important;
+  color: var(--text-200);
+
+  &:hover {
+    background: transparent !important;
+    color: var(--primary);
+  }
+}
+
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.imageSection {
+  width: 100%;
+}
+
+.infoSection {
+  width: 100%;
+}
+
+.fullWidthSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detailsCard {
+  padding: 24px;
+}
+
+.detailsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-100);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.detailsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.detailRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detailLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-400);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detailValue {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-100);
+}
+
+@media (min-width: 768px) {
+  .mainLayout {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 32px 24px;
+  }
+
+  .mainLayout {
+    gap: 48px;
+  }
+}

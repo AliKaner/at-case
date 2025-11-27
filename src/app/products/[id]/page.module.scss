@@ -1,0 +1,53 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.backButton {
+  margin-bottom: 24px;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.notFoundContainer {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.notFoundText {
+  font-size: 18px;
+  color: var(--text-200);
+  margin-bottom: 16px;
+}
+
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.imageSection {
+  width: 100%;
+}
+
+.infoSection {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 32px 24px;
+  }
+
+  .mainLayout {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}

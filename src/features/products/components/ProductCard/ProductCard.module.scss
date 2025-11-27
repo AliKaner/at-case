@@ -1,0 +1,313 @@
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--pure-white);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.06);
+  transition: all 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12),
+      0 4px 8px rgba(15, 23, 42, 0.08);
+  }
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.image {
+  object-fit: contain;
+  transition: transform 0.3s ease;
+
+  .card:hover & {
+    transform: scale(1.03);
+  }
+}
+
+.discountBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: var(--pure-white);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.35);
+  letter-spacing: 0.3px;
+}
+
+.outOfStockOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  backdrop-filter: blur(1px);
+}
+
+.outOfStockText {
+  background: var(--pure-white);
+  color: var(--text-100);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--pure-white);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.favoriteIcon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--text-200);
+  fill: none;
+  transition: all 0.2s ease;
+
+  &.active {
+    fill: var(--danger);
+    stroke: var(--danger);
+    animation: heartPop 0.3s ease;
+  }
+}
+
+@keyframes heartPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.brand {
+  font-size: 11px;
+  color: var(--text-200);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-100);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+  flex: 1;
+  min-height: 36px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 6px;
+}
+
+.oldPrice {
+  font-size: 11px;
+  color: var(--text-400);
+  text-decoration: line-through;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-100);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lowStock {
+  font-size: 11px;
+  color: var(--warning);
+  font-weight: 500;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.addToCartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  background: var(--primary);
+  color: var(--pure-white);
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover:not(:disabled) {
+    background: var(--primary-dark);
+  }
+
+  &:disabled {
+    background: var(--gray-300);
+    color: var(--text-400);
+    cursor: not-allowed;
+  }
+}
+
+.cartIcon {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  background: var(--secondary);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.quantityButton {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: var(--pure-white);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: var(--text-100);
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  &:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.quantity {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--pure-white);
+  min-width: 24px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 160px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 12px;
+    min-height: 34px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .favoriteButton {
+    width: 32px;
+    height: 32px;
+    top: 8px;
+    right: 8px;
+  }
+
+  .favoriteIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .discountBadge {
+    top: 8px;
+    left: 8px;
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
