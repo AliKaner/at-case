@@ -2,6 +2,28 @@
 
 A modern e-commerce application built with Next.js 16, React 19, and GraphQL. This project demonstrates advanced product filtering, variant selection, favorites management, and shopping cart functionality.
 
+## Screen Images
+<img width="1366" height="837" alt="image" src="https://github.com/user-attachments/assets/1bf1e87f-e7f7-41f6-a558-5ae4b38e8195" />
+<img width="1275" height="737" alt="image" src="https://github.com/user-attachments/assets/28fcaad4-8585-44d1-92fe-f6bb8fbf1e35" />
+<img width="1319" height="614" alt="image" src="https://github.com/user-attachments/assets/c82abf25-510b-464c-85c1-e879fc948de3" />
+<img width="1282" height="906" alt="image" src="https://github.com/user-attachments/assets/dc527d1e-200a-4b1a-8b13-57ccd95c22ac" />
+<img width="1364" height="907" alt="image" src="https://github.com/user-attachments/assets/908a4dd3-0611-488a-b1ad-ff0ff390b1fb" />
+<img width="1506" height="762" alt="image" src="https://github.com/user-attachments/assets/c776c107-a34b-464c-baa4-d7a6150af8b2" />
+
+<img width="379" height="805" alt="image" src="https://github.com/user-attachments/assets/688e1959-223a-4ac1-8c8a-46bcf6cbeae1" />
+<img width="368" height="646" alt="image" src="https://github.com/user-attachments/assets/29313003-ac7c-4e2d-8e96-38f310fba637" />
+<img width="377" height="679" alt="image" src="https://github.com/user-attachments/assets/95028198-4817-429a-aba4-df58cadef1c5" />
+<img width="374" height="783" alt="image" src="https://github.com/user-attachments/assets/4cbe65bb-adbc-4d77-ae99-c5b690f00856" />
+<img width="378" height="794" alt="image" src="https://github.com/user-attachments/assets/9823f2d6-7fd6-4695-bf9d-1e3c9ce05bfb" />
+<img width="381" height="708" alt="image" src="https://github.com/user-attachments/assets/eb5a3edf-0048-4bcb-8581-52a5f2323dd9" />
+
+<img width="211" height="367" alt="image" src="https://github.com/user-attachments/assets/8ae9765b-37d9-4ac8-9f1e-984c3a9c12a2" />
+<img width="214" height="383" alt="image" src="https://github.com/user-attachments/assets/8f1b1841-c54c-414f-b28c-484b214ccd6c" />
+<img width="215" height="366" alt="image" src="https://github.com/user-attachments/assets/f87a850a-24e0-4a1d-b734-53135541716b" />
+<img width="218" height="396" alt="image" src="https://github.com/user-attachments/assets/1de782e4-60ff-4330-872a-9c60b7e05899" />
+<img width="214" height="397" alt="image" src="https://github.com/user-attachments/assets/4e65a180-3889-44ee-ad6e-53d2ee015332" />
+<img width="214" height="403" alt="image" src="https://github.com/user-attachments/assets/1bc77d80-1c97-43e5-a3cf-a00f1db263fa" />
+
 ## 📁 Project Structure
 
 ```
